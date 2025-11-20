@@ -27,10 +27,6 @@ class GameEngine:
         }
 
     def check_winner(self):
-        """
-        Provjera pobjede (X/O) ili None.
-        Ovo kolega može kasnije refaktorirati/zakomplicirati po želji.
-        """
         b = self.board
 
         for r in range(3):
@@ -54,5 +50,3 @@ class GameEngine:
                 if cell == "":
                     return False
         return self.check_winner() is None
-
-
